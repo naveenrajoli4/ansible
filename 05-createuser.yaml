@@ -11,6 +11,10 @@
     ansible.builtin.group:
       name: rnk
       state: present
-      
+
   - name: geatharing system information 
     ansible.builtin.setup:
+
+  - name: Show all gathered facts
+    ansible.builtin.debug:
+      var: ansible_facts
