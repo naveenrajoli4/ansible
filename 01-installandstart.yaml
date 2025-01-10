@@ -1,14 +1,14 @@
 - name: Install and start of nginx service
-  hosts: 
-  become:
+  hosts: servers
+  become: yes # -b
   tasks:
-    -name: install nginx
-    ansible.builtin.package
+  - name: install nginx
+    ansible.builtin.package:
       name: nginx
       state: installed
 
-    -name: start nginx service
-    ansible.builtin.service
+  - name: start nginx service
+    ansible.builtin.service:
       name: nginx
       enabled: yes # here "enabled: true", we can use this one also for enabled
       state: started
