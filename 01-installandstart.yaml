@@ -12,14 +12,13 @@
       name: nginx
       enabled: yes # here "enabled: true", we can use this one also for enabled
       state: started  
+
   - name: checking the nginx service
-    ansible.builtin.command: systemctl is-active nginx
-      register: nginx_status
-      ignore_errors: yes
-  
-  - name: print the nginx service
+    ansible.builtin.service_facts:
+      
+  - name: print the nginx service status
     ansible.builtin.debug:
-      msg: "nginx service status {{ nginx_status.stdout }}"
+      msg: ansible_facts.services['nginx']
 
 
   
