@@ -13,12 +13,12 @@
       # enabled: yes # here "enabled: true", we can use this one also for enabled
       state: stoping
 
-  - name: checking the nginx service
-    ansible.builtin.service_facts:
+  # - name: checking the nginx service
+  #   ansible.builtin.service_facts:
       
-  - name: print the nginx service status
-    ansible.builtin.debug:
-      msg: ansible_facts.services
+  # - name: print the nginx service status
+  #   ansible.builtin.debug:
+  #     msg: ansible_facts.services
 
 
   
