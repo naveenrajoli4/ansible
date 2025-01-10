@@ -7,7 +7,10 @@
       name: rajoli
       state: present
 
-  - name : creating group 
+  - name: creating group 
     ansible.builtin.group:
       name: rnk
       state: present
+      
+  - name: geatharing system information 
+    ansible.builtin.setup:
