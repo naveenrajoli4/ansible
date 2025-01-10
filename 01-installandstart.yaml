@@ -11,8 +11,7 @@
     ansible.builtin.service:
       name: nginx
       enabled: yes # here "enabled: true", we can use this one also for enabled
-      state: started
-  
+      state: started  
   - name: checking the nginx service
     ansible.builtin.command: systemctl is-active nginx
       register: nginx_status
