@@ -1,0 +1,8 @@
+- name: git clone
+  hosts: servers
+  become: yes
+  tasks:
+  - name: clone into new repo
+    repo: https://github.com/naveenrajoli4/expense_documentation.git
+    dest: /home/ec2-user
+    version: main 
