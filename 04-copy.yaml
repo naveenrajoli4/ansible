@@ -5,3 +5,4 @@
     ansible.builtin.copy:    
       src:  /home/ec2-user/01
       dest: /home/ec2-user/02
+      remote_src: yes
