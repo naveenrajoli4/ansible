@@ -1,0 +1,13 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars_files: # variables fitch from var.yaml files 
+  - var.yaml  
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}"
+
+  - name: print variables
+    ansible.builtin.debug:
+    msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}""
