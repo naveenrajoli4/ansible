@@ -20,7 +20,7 @@
   
   - name: print the nginx service
     ansible.builtin.debug:
-    msg: "nginx service status {{ nginx_status.stdout }}"
+      msg: "nginx service status {{ nginx_status.stdout }}"
 
 
   
