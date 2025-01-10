@@ -2,7 +2,7 @@
   hosts: servers
   tasks:
   - name: ping the server
-    ansible.builtin.net_ping:
+    ansible.builtin.ping:
     
 
   
