@@ -1,0 +1,11 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars: # PLAY level variables
+    NAME: naveen
+    LASTNAME: RAJOLI
+    NUM: *******7263    
+  tasks:
+  - name: 
+    ansible.builtin.debug:
+      msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}""
