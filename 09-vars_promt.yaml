@@ -1,0 +1,15 @@
+- name:
+  hosts: local
+  connection: local
+  vars_promt:
+  - name: NAME
+    promt: "please enter your name"
+    private: false # it is not confidential information
+  - name: PASSWORD
+    promt: "please enter your password"
+  - name: NUMBER
+    promt: "please enter your pass ****7263"
+  tasks:
+  - name: printing the information 
+    ansible.builtin.debug:
+    msg: "name is {{ NAME }} password is {{ PASSWORD }} and number {{ NUMBER }}"
