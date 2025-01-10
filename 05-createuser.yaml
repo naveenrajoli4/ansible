@@ -4,4 +4,4 @@
   - name : creating new user
     ansible.builtin.user: 
       name: naveen
-      state: prasent
+      state: present
