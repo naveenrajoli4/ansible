@@ -11,7 +11,7 @@
     ansible.builtin.service:
       name: nginx
       # enabled: yes # here "enabled: true", we can use this one also for enabled
-      state: stoping
+      state: stopped
 
   # - name: checking the nginx service
   #   ansible.builtin.service_facts:
