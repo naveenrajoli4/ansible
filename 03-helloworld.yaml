@@ -7,5 +7,21 @@
   - name: print hello india
     ansible.builtin.debug:
       msg: "printing hello india"
+
+- name: PLAY1
+  hosts: local
+  connection: local # managing its own node, no need of credentials
+  tasks:
+  - name: PLAY1 and TASK1
+    ansible.builtin.debug:
+      msg: "Hello from PLAY1 and TASK1"
+
+- name: PLAY2
+  hosts: local
+  connection: local # managing its own node, no need of credentials
+  tasks:
+  - name: PLAY2 and TASK1
+    ansible.builtin.debug:
+      msg: "Hello from PLAY2 and TASK1"
   
 
