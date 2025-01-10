@@ -1,0 +1,7 @@
+- name: copy and paste
+  hosts: servers
+  tasks:
+  - name : copy files from one location to another location 
+    ansible.builtin.copy:    
+      src:  /home/ec2-user/01
+      dest: /home/ec2-user/02
