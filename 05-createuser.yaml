@@ -1,5 +1,6 @@
 - name: creation user
   hosts: servers
+  become: yes
   tasks:
   - name : creating new user
     ansible.builtin.user: 
