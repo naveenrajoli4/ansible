@@ -4,5 +4,5 @@
   tasks:
   - name : creating new user
     ansible.builtin.user: 
-      name: "rnk" "rajoli" "yes"
+      name: rnk rajoli
       state: present
