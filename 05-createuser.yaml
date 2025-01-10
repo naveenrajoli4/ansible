@@ -1,8 +1,13 @@
-- name: creation user
+- name: creation user and group
   hosts: servers
   become: yes
   tasks:
   - name : creating new user
     ansible.builtin.user: 
-      name: rnk rajoli
+      name: rajoli
+      state: present
+
+  - name : creating group 
+    ansible.builtin.group:
+      name: rnk
       state: present
