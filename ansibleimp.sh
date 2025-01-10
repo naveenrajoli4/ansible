@@ -13,3 +13,4 @@ ansible all -i 3.82.122.105, -e ansible_user=ec2-user -e ansible_password=DevOps
 
 # Below command is to run the playbook in ansible server
 ansible-playbook -i <IP>, -e ansible_user=ec2-user -e ansible_password=DevOps321 nginx_setup.yml
+
