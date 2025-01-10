@@ -5,5 +5,5 @@
   - name: clone into new repo
     ansible.builtin.git:
       repo: https://github.com/naveenrajoli4/expense_documentation.git
-      dest: /home/ec2-user
+      dest: /home/ec2-user/naveen
       version: main 
