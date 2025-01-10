@@ -2,7 +2,7 @@
   hosts: 3.83.122.169
   tasks:
     - name: ping the server
-      ansible.builtin.ping:
+      ansible.builtin.net_ping:
     
 
   
