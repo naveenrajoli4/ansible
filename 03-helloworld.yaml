@@ -7,4 +7,5 @@
   - name: print hello india
     ansible.builtin.debug:
       msg: "printing hello india"
+  
 
