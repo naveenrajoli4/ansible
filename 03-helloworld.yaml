@@ -1,0 +1,10 @@
+- name: hello world playbook
+  hosts: servers
+  tasks:
+  - name: print hello world
+    ansible.builtin.debug:
+      msg: "printing hello world text"
+  - name: print hello india
+    ansible.builtin.debug:
+      msg: "printing hello india"
+
