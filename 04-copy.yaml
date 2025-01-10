@@ -3,6 +3,6 @@
   tasks:
   - name : copy files from one location to another location 
     ansible.builtin.copy:    
-      src:  /home/ec2-user/01
+      src:  /home/ec2-user/01/hello.txt
       dest: /home/ec2-user/02
       remote_src: yes
