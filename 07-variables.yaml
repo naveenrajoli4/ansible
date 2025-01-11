@@ -14,8 +14,8 @@
 
   - name: print variaables
     ansible.builtin.debug:
-    msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}"
+      msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}"
 
     # below is the command to run the script for local host 
-    #                  ansible-playbook -i inventory.yaml <script_name>
-    # here user and pswd no required bcz its local host 
+    #                  ansible-playbook -i inventory.ini <script_name>
+    # here user and pswd not required bcz its local host 
