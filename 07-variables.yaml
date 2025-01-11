@@ -12,7 +12,7 @@
     ansible.builtin.debug:
       msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}"
 
-  - name: print variables
+  - name: print variaables
     ansible.builtin.debug:
     msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}"
 
