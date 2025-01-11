@@ -1,4 +1,4 @@
-- name:
+- name: confidental playbook
   hosts: local
   connection: local
   vars_promt:
@@ -12,4 +12,7 @@
   tasks:
   - name: printing the information 
     ansible.builtin.debug:
-    msg: "name is {{ NAME }} password is {{ PASSWORD }} and number {{ NUMBER }}"
+     msg: "name is {{ NAME }} password is {{ PASSWORD }} and number {{ NUMBER }}"
+
+    # practice
+     var_promt and variables from inventory 
