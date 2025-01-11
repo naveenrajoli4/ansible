@@ -1,4 +1,4 @@
-- name: ping
+- name: ping # PlayBook Name
   hosts: servers
   tasks:
   - name: ping the server

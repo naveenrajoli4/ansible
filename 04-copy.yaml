@@ -1,4 +1,4 @@
-- name: copy and paste
+- name: copy and paste # The below playbook is used to copy files from source to detstination
   hosts: servers
   tasks:
   - name : copy files from one location to another location 

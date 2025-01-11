@@ -1,4 +1,4 @@
-- name: Install and start of nginx service
+- name: Install and start of nginx service # PlayBook Name
   hosts: servers
   become: yes # -b
   tasks:
