@@ -4,7 +4,7 @@
   vars_prompt:
   - name: NAME
     prompt: "please enter your name"
-    private: false # it is not confidential information
+    # private: false #it is not confidential information
   - name: PASSWORD
     prompt: "please enter your password"
   - name: NUMBER
