@@ -15,4 +15,4 @@
      msg: "name is {{ NAME }} password is {{ PASSWORD }} and number {{ NUMBER }}"
 
     # practice
-     var_promt and variables from inventory 
+    #  var_promt and variables from inventory 
