@@ -4,13 +4,13 @@
   vars_prompt:
   - name: NAME
     prompt: "please enter your name"
-    private: false #it is not confidential information
+    # private: false #it is not confidential information(if you enable this we can the input information in screen)
   - name: PASSWORD
     prompt: "please enter your password"
-    private: false
+    # private: false #it is not confidential information (if you enable this we can the input information in screen)
   - name: NUMBER
     prompt: "please enter your pass ****7263"
-    private: false
+    # private: false #it is not confidential information(if you enable this we can the input information in screen)
   tasks:
   - name: printing the information 
     ansible.builtin.debug:
