@@ -1,4 +1,4 @@
-- name: confidental playbook
+- name: #confidental playbook
   hosts: local
   connection: local
   vars_promt:
