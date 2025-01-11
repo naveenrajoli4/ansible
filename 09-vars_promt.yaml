@@ -1,14 +1,14 @@
-- name: variables from files
+- name: #confidental playbook
   hosts: local
   connection: local
-  vars_promt:
+  vars_prompt:
   - name: NAME
-    promt: "please enter your name"
+    prompt: "please enter your name"
     private: false # it is not confidential information
   - name: PASSWORD
-    promt: "please enter your password"
+    prompt: "please enter your password"
   - name: NUMBER
-    promt: "please enter your pass ****7263"
+    prompt: "please enter your pass ****7263"
   tasks:
   - name: printing the information 
     ansible.builtin.debug:
