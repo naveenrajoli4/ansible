@@ -1,0 +1,22 @@
+- name: check given value is greater than not
+  hosts: local
+  connection: local
+  vars:
+    number: 20
+  tasks:
+  - name: print if given number is greater that 10
+    ansible.builtin.debug:
+      msg: "my number is {{ number }}"
+    when: number > 10
+  
+  - name: print if given number is lessthan or eaqul number
+    ansible.builtin.debug:
+      msg: "my number is {{ number }}"
+    when: number <= 20
+  
+  - name: print if given number is lessthan or eaqul number
+    ansible.builtin.debug:
+      msg: "my number is {{ number }}"
+    when: number <= 10
+  
+
