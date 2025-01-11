@@ -1,13 +1,14 @@
-- name: vvariables fitch from another file
+- name: variables fitch from another file
   hosts: local
   connection: local
   vars_files: # variables fitch from another file var.yaml files 
-  - var.yaml  
+  - var.yaml 
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}"
+      msg: "my name is {{ NAME }} {{ LASTNAME }}, duration is 
+      {{ DURATION }} phone number {{ NUM }}"
 
   - name: print variables
     ansible.builtin.debug:
-    msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}""
+      msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}""
