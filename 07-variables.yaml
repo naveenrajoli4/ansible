@@ -4,11 +4,11 @@
   vars: # PLAY level variables, global variables
     NAME: naveen
     LASTNAME: RAJOLI
-    NUM: ********7263    
+    NUM: 7263    
   tasks:
   - name: print variables
-    vars: # Task level variables, accessible only with in the task. Task variables can override play level variables. Local variables
-      NAME: "NAVEEN KUMAR"
+    # vars: # Task level variables, accessible only with in the task. Task variables can override play level variables. Local variables
+    #   NAME: "NAVEEN KUMAR"
     ansible.builtin.debug:
       msg: "my name is {{ NAME }} {{ LASTNAME }} phone number {{ NUM }}"
 
