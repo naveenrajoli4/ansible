@@ -6,7 +6,7 @@
   - name: installing apps
     ansible.builtin.package:
       name: "{{ item }}"
-      state: installed
+      state: absent
     loop:
     - git
     - zip
