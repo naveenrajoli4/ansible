@@ -38,3 +38,18 @@
     ansible.builtin.debug:
       msg: "course info:- {{ course | items2dict }}"
 
+# OUTPUT--> "msg": "course info:- {'name': 'ansible', 'duration': 120, 'trainer': 'naveen rajoli'}"
+
+  - name: conver lower to upper letters
+    vars:
+      name: NAVeen kUMar
+    ansible.builtin.debug:
+      msg: "hello {{ name | upper }}"
+
+  - name: conver upper to lower letters
+    vars:
+      name: NAVeen kUMar
+    ansible.builtin.debug:
+      msg: "hello {{ name | lower }}"
+
+
