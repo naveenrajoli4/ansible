@@ -17,3 +17,17 @@
     when: ansible_os_family == "Debian"
 
 
+
+# The line when: ansible_os_family == "RedHat" in the script is a conditional statement that ensures the associated task is executed only if the target system's operating system family is RedHat.
+
+# Breakdown of the Script:
+# ansible_os_family:
+# This is a built-in Ansible fact that identifies the OS family of the target system.
+
+# Common values include:
+# "RedHat": Includes Red Hat Enterprise Linux (RHEL), CentOS, AlmaLinux, Rocky Linux, etc.
+# "Debian": Includes Debian, Ubuntu, etc.
+# "Suse", "Gentoo", "Windows", etc., for other OS families.
+
+# when Statement:
+# The when clause is used in Ansible to apply a conditional filter. Tasks are executed only if the condition evaluates to true.
