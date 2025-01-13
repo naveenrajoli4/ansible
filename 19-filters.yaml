@@ -59,7 +59,7 @@
 
   - name:
     vars:
-      NUM: "1,24,234,2456"
+      NUM: [1,24,234,2456]
     ansible.builtin.debug:
       msg: "min number is {{ NUM | min}}, max number is {{ NUM | max }}"
 
