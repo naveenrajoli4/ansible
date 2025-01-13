@@ -1,7 +1,7 @@
 - name: installing apps
   hosts: local
   connection: local
-  become: yes
+  # become: yes
   tasks:
   - name: installing apps
     ansible.builtin.package:
