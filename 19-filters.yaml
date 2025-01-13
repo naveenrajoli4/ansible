@@ -65,7 +65,7 @@
 
 # OUTPUT:---> "msg": "min number is 1, max number is 2456"
 
-   - name: check ipaddress is valid or not
+  - name: check ipaddress is valid or not
     vars:
       ip: "192.168.1.1"
     ansible.builtin.debug:
