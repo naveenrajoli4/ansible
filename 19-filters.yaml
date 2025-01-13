@@ -7,3 +7,9 @@
       msg: " hello {{ person | default('ramesh') }}"
 
 # NOTE--> person is variable. if variable not exist its take default variable as 'ramesh'.
+
+  - name: convert list to string
+    vars:
+      fruits: "apple, banana, orange, watermelon" # string
+    ansible.builtin.debug:
+      msg: " fruits are: {{ fruits }}"
