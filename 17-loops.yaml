@@ -6,10 +6,18 @@
   - name: installing apps
     ansible.builtin.package:
       name: "{{ item }}"
-      state: absent
+      state: installed
     loop:
     - git
     - zip
     - mysql
     - gcc 
+
+
+
+
+    # - name: installing apps
+    # ansible.builtin.package:
+    #   name: "{{ item }}"
+    #   state: absent # its to uninstall the package
 
