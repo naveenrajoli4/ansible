@@ -1,14 +1,13 @@
-- name: installing apps
-  hosts: local
-  connection: local
-  # become: yes
+- name: install packages
+  hosts: web
+  become: yes
   tasks:
-  - name: installing apps
+  - name: install packages
     ansible.builtin.package:
       name: "{{ item }}"
-      sate: installed
+      state: installed
     loop:
-    - git
-    - zip
+    - gcc
     - mysql
-    - gcc 
+    - git
+    - zip 
