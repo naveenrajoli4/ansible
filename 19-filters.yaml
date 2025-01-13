@@ -40,16 +40,28 @@
 
 # OUTPUT--> "msg": "course info:- {'name': 'ansible', 'duration': 120, 'trainer': 'naveen rajoli'}"
 
-  - name: conver lower to upper letters
+  - name: convert lower to upper letters
     vars:
       name: NAVeen kUMar
     ansible.builtin.debug:
       msg: "hello {{ name | upper }}"
 
-  - name: conver upper to lower letters
+# OUTPUT:---> "msg": "hello NAVEEN KUMAR"
+
+
+  - name: convert upper to lower letters
     vars:
       name: NAVeen kUMar
     ansible.builtin.debug:
       msg: "hello {{ name | lower }}"
+
+# OUTPUT:---> "msg": "hello naveen kumar"
+
+  - name:
+    vars:
+      NUM: 1,24,234,2456
+    ansible.builtin.debug:
+      msg: "min number is {{ NUM | min}}, max number is {{ NUM | max }}"
+
 
 
