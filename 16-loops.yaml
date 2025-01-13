@@ -1,0 +1,12 @@
+- name: loops practice
+  hostname: local
+  connection: local
+  tasks:
+  - name: print god names
+    ansible.builtin.debug:
+      msg: "god names are: {{ item }}"
+    loop:
+    - loard_hanuman
+    - loard_ganesh
+    - loard_ayyapa
+    - loard_shiva
