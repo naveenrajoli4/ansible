@@ -57,11 +57,19 @@
 
 # OUTPUT:---> "msg": "hello naveen kumar"
 
-  - name:
+  - name: print min and max
     vars:
       NUM: [1,24,234,2456]
     ansible.builtin.debug:
       msg: "min number is {{ NUM | min}}, max number is {{ NUM | max }}"
+
+# OUTPUT:---> "msg": "min number is 1, max number is 2456"
+
+   - name: check ipaddress is valid or not
+    vars:
+      ip: "192.168.1.1"
+    ansible.builtin.debug:
+      msg: "{{ ip | ansible.utils.ipaddr }}"
 
 
 
