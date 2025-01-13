@@ -1,0 +1,9 @@
+- name: filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: handle undefine variable
+    ansible.builtin.debug:
+      msg: " hello {{ Person | default('ramesh') }}"
+
+# NOTE--> person is variable. if variable not exist its take default variable as 'ramesh'.
