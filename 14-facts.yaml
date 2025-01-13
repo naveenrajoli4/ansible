@@ -11,10 +11,10 @@
 
 # What Is Inside ansible_facts?
 # ansible_facts is a dictionary containing a wide range of information about the target system, such as:
-# Operating System Information:
-# Networking Information:
-# Hardware Details:
-# Hostname and Domain:
-# File System and Disk Information:
-# Custom Facts:
+# 1.Operating System Information:
+# 2.Networking Information:
+# 3.Hardware Details:
+# 4.Hostname and Domain:
+# 5.File System and Disk Information:
+# 6.Custom Facts:
 
