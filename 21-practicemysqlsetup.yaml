@@ -11,8 +11,7 @@
       executable: pip3.9
     loop:
     - PyMySQL
-    - mysqlclient
-    
+
   - name: installing mysql
     ansible.builtin.package:
       name: mysql-server
@@ -31,6 +30,10 @@
       # hosts: local
     register: mysql_info
     ignore_errors: true
+
+  - name: print output
+    ansible.builtin.debug:
+      msg: "MySQL info: {{ mysql_info }}"
 
 
   
