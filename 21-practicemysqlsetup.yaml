@@ -20,7 +20,7 @@
     community.mysql.mysql_user:
       login_user: root
       login_password: "{{ my_sql_root_pwd }}"
-      hosts: local
+      # hosts: local
     register: mysql_info
     ignore_errors: true
 
