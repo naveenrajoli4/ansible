@@ -2,6 +2,8 @@
   hosts: local
   connection: local
   become: yes
+  vars:
+    my_sql_root_pwd: ExpenseApp@1
   tasks:  
   - name: installing mysql
     ansible.builtin.package:
@@ -13,5 +15,14 @@
       name: mysqld
       state: restarted
       enabled: yes
+
+  - name: Update MySQL root password
+      community.mysql.mysql_user:
+        login_user: root
+        login_password: {{ my_sql_root_pwd }}
+        hosts: local
+      register: mysql_info
+      ignore_errors: true
+
 
   
