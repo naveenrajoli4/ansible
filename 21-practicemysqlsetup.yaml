@@ -58,7 +58,7 @@
 
   - name: Install MySQL server
     ansible.builtin.package:
-      name: mysql-server
+      name: 172.31.93.12
       state: installed
 
   - name: start and enable mysql server
