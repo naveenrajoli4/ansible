@@ -17,7 +17,7 @@
       enabled: yes
 
   - name: Update MySQL root password
-    community.mysql.mysql_user:
+    community.mysql.mysql_info:
       login_user: root
       login_password: "{{ my_sql_root_pwd }}"
       # hosts: local
