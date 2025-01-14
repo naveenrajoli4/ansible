@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: shell vs command
-    ansible.builtin.command: ls -ltr > /tmp/output.txt
+    # ansible.builtin.command: ls -ltr > /tmp/output.txt
     ansible.builtin.shell: ls -ltr > /tmp/output.txt 
     
 #ansible.builtin.command---> this like running commands from out side. we will not get access to shell,veriables,redirections,pipes,etc.
